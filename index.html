@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deluxe Vestuários Masculinos. Moda masculina em Blumenau/SC e Campo Grande/MS. Conheça nossas unidades e fale com nossa equipe." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#111111" />
+  <title>Deluxe Vestuários Masculinos | Blumenau e Campo Grande</title>
+  <style>
+    :root{--bg:#f7f6f2;--ink:#161616;--muted:#6f6f6f;--line:#dedbd2;--card:#fff;--accent:#aa7a3b;--accent-dark:#805723;--dark:#111;--radius:24px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(247,246,242,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:900;letter-spacing:-.04em;font-size:1.2rem}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;align-items:center;font-size:.94rem}.navlinks a:hover{color:var(--accent-dark)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:999px;font-weight:800;border:1px solid var(--dark);transition:.2s ease}.btn-dark{background:var(--dark);color:white}.btn-dark:hover{transform:translateY(-2px);background:#2b2b2b}.btn-light{background:transparent}.btn-light:hover{background:white}
+    .hero{padding:86px 0 54px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--accent-dark);margin-bottom:18px}
+    h1{font-size:clamp(3.2rem,7vw,6.4rem);line-height:.92;letter-spacing:-.07em;margin:0 0 26px;max-width:820px}.hero p{font-size:1.13rem;color:var(--muted);max-width:650px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{margin-top:25px;font-size:.9rem;color:var(--muted)}
+    .visual{min-height:560px;border-radius:36px;background:linear-gradient(155deg,#191919 0%,#2d261e 52%,#b98546 100%);position:relative;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.18)}
+    .visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.visual:before{width:370px;height:370px;background:rgba(255,255,255,.08);right:-70px;top:-55px}.visual:after{width:320px;height:320px;background:rgba(255,255,255,.04);left:-130px;bottom:-70px}
+    .look{position:absolute;inset:0;display:grid;place-items:center}.shirt{width:240px;height:330px;background:#f2efe8;clip-path:polygon(20% 8%,37% 0,50% 12%,63% 0,80% 8%,100% 27%,85% 41%,79% 33%,79% 100%,21% 100%,21% 33%,15% 41%,0 27%);filter:drop-shadow(0 25px 25px rgba(0,0,0,.28));position:relative}.shirt:after{content:"DELUXE";position:absolute;top:154px;left:0;right:0;text-align:center;font-size:13px;letter-spacing:.32em;font-weight:900;color:#8c714f}
+    .visual-tag{position:absolute;left:28px;bottom:28px;color:white}.visual-tag strong{display:block;font-size:1.3rem}.visual-tag small{opacity:.76}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:32px}.section-head h2{font-size:clamp(2rem,4vw,3.6rem);line-height:1;letter-spacing:-.05em;margin:0}.section-head p{max-width:580px;color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}.card .num{font-size:.8rem;letter-spacing:.14em;color:var(--accent-dark);font-weight:900}.card h3{margin:55px 0 10px;font-size:1.3rem}.card p{color:var(--muted);margin:0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}.store{background:var(--dark);color:#fff;border-radius:30px;padding:36px;min-height:320px;display:flex;flex-direction:column;justify-content:space-between}.store.light{background:#e8e1d7;color:var(--ink)}.store .city{font-size:2.5rem;font-weight:900;letter-spacing:-.05em}.store p{opacity:.76;max-width:450px}.store a{text-decoration:underline;text-underline-offset:4px}
+    .about{background:#efece5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.about h2{font-size:clamp(2rem,4vw,3.4rem);margin:0;letter-spacing:-.05em}.about p{color:var(--muted);margin-top:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.fact{padding:18px 0;border-top:1px solid #cfc9be}.fact strong{display:block}.fact span{font-size:.9rem;color:var(--muted)}
+    .contact{display:grid;grid-template-columns:1fr .9fr;gap:28px}.contact-box{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px}.contact-box h2{font-size:2.3rem;line-height:1;letter-spacing:-.05em;margin-top:0}.contact-row{padding:18px 0;border-top:1px solid var(--line)}.contact-row small{display:block;color:var(--muted);margin-bottom:4px}.contact-row a{font-weight:800}.notice{background:#fff7ea;border:1px solid #ead4af;border-radius:18px;padding:18px;color:#6f542c;font-size:.92rem}
+    .legal{background:white}.legal details{border-top:1px solid var(--line);padding:18px 0}.legal summary{cursor:pointer;font-weight:800}.legal p,.legal li{color:var(--muted)}
+    footer{background:#111;color:#fff;padding:46px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.footer-brand{font-size:1.6rem;font-weight:900;letter-spacing:-.04em}.footer-meta{font-size:.86rem;color:#aaa;max-width:680px}.footer-links{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem;color:#ddd}
+    .cookie{position:fixed;left:20px;right:20px;bottom:20px;z-index:50;max-width:760px;margin:auto;background:#fff;border:1px solid var(--line);box-shadow:0 20px 70px rgba(0,0,0,.18);border-radius:18px;padding:18px;display:none;align-items:center;gap:18px}.cookie p{font-size:.88rem;margin:0;color:var(--muted);flex:1}.cookie button{border:0;background:#111;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;cursor:pointer}
+    @media(max-width:900px){.hero-grid,.about-grid,.contact,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.visual{min-height:430px}.section-head{align-items:start;flex-direction:column}.navlinks a:not(.btn){display:none}.hero{padding-top:54px}.facts{grid-template-columns:1fr}.footer-grid{align-items:start;flex-direction:column}}
+    @media(max-width:520px){.container{width:min(100% - 26px,1160px)}h1{font-size:3.5rem}.visual{min-height:380px}.shirt{width:185px;height:255px}.shirt:after{top:118px}.hero-actions .btn{width:100%}.store,.contact-box,.card{padding:24px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ClothingStore",
+    "name":"Deluxe Vestuários Masculinos",
+    "legalName":"DELUXE NEGOCIOS DO VESTUARIO LTDA",
+    "email":"financeiro@principessacamisaria.com.br",
+    "telephone":"+55 47 3309-0200",
+    "address":{"@type":"PostalAddress","streetAddress":"Rua Luiz Maske, 248, Bloco A","addressLocality":"Blumenau","addressRegion":"SC","postalCode":"89066-650","addressCountry":"BR"},
+    "areaServed":["Blumenau, SC","Campo Grande, MS"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio">DELUXE <span>VESTUÁRIOS</span></a>
+      <nav class="navlinks" aria-label="Navegação principal">
+        <a href="#colecao">Vestuário</a><a href="#lojas">Lojas</a><a href="#empresa">Empresa</a><a href="#contato">Contato</a>
+        <a class="btn btn-dark" href="tel:+554733090200">Ligar agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Moda masculina • atendimento em loja</div>
+          <h1>Estilo masculino, com presença.</h1>
+          <p>A Deluxe Vestuários Masculinos apresenta uma seleção de vestuário masculino para diferentes momentos do dia. Visite nossas unidades em Blumenau/SC e Campo Grande/MS ou fale com nossa equipe.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#lojas">Conhecer nossas lojas</a>
+            <a class="btn btn-light" href="mailto:financeiro@principessacamisaria.com.br">Enviar e-mail</a>
+          </div>
+          <div class="hero-note">Atendimento e disponibilidade de produtos podem variar por unidade.</div>
+        </div>
+        <div class="visual" role="img" aria-label="Composição visual de moda masculina da Deluxe Vestuários">
+          <div class="look"><div class="shirt"></div></div>
+          <div class="visual-tag"><strong>Deluxe Vestuários Masculinos</strong><small>Blumenau • Campo Grande</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="colecao">
+      <div class="container">
+        <div class="section-head"><h2>Vestuário masculino<br>para o seu estilo.</h2><p>Uma apresentação institucional da nossa atuação no segmento de vestuário masculino. Para confirmar modelos, tamanhos, disponibilidade e condições comerciais, entre em contato com a unidade de sua preferência.</p></div>
+        <div class="cards">
+          <article class="card"><div class="num">01 / CASUAL</div><h3>Dia a dia</h3><p>Peças masculinas para composições versáteis e uma rotina com mais praticidade.</p></article>
+          <article class="card"><div class="num">02 / SOCIAL</div><h3>Visual alinhado</h3><p>Opções para quem procura uma apresentação mais clássica em compromissos e ocasiões especiais.</p></article>
+          <article class="card"><div class="num">03 / ATENDIMENTO</div><h3>Escolha com suporte</h3><p>Converse com nossa equipe para consultar produtos e informações disponíveis em cada unidade.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lojas">
+      <div class="container">
+        <div class="section-head"><h2>Nossas unidades.</h2><p>Informações claras para você saber com quem está falando e onde encontrar a empresa.</p></div>
+        <div class="split">
+          <article class="store"><div><div class="eyebrow" style="color:#d8b98e">Santa Catarina</div><div class="city">Blumenau</div><p>Rua Luiz Maske, 248, Bloco A<br>Itoupavazinha<br>Blumenau - SC<br>CEP 89066-650</p></div><a href="tel:+554733090200">Telefone: (47) 3309-0200</a></article>
+          <article class="store light"><div><div class="eyebrow">Mato Grosso do Sul</div><div class="city">Campo Grande</div><p>Também contamos com uma unidade em Campo Grande/MS. O endereço completo não foi informado nesta página. Entre em contato para confirmar a localização e o atendimento da unidade.</p></div><a href="mailto:financeiro@principessacamisaria.com.br">Solicitar informações da unidade</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="empresa">
+      <div class="container about-grid">
+        <div><div class="eyebrow">Sobre a empresa</div><h2>Identidade clara.<br>Atendimento direto.</h2></div>
+        <div>
+          <p><strong>Deluxe Vestuários Masculinos</strong> é o nome utilizado neste site pela organização <strong>DELUXE NEGOCIOS DO VESTUARIO LTDA</strong>. Atuamos no segmento de vestuário masculino e mantemos presença em Blumenau/SC e Campo Grande/MS.</p>
+          <p>Este site tem finalidade institucional e apresenta os canais de contato e informações da empresa. Não solicitamos pagamentos, senhas bancárias ou dados financeiros por meio deste site.</p>
+          <div class="facts">
+            <div class="fact"><strong>Razão social</strong><span>DELUXE NEGOCIOS DO VESTUARIO LTDA</span></div>
+            <div class="fact"><strong>Segmento</strong><span>Vestuário masculino</span></div>
+            <div class="fact"><strong>Unidades</strong><span>Blumenau/SC e Campo Grande/MS</span></div>
+            <div class="fact"><strong>Contato</strong><span>(47) 3309-0200</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container contact">
+        <div class="contact-box">
+          <div class="eyebrow">Fale conosco</div><h2>Estamos à disposição.</h2>
+          <div class="contact-row"><small>Telefone</small><a href="tel:+554733090200">(47) 3309-0200</a></div>
+          <div class="contact-row"><small>E-mail</small><a href="mailto:financeiro@principessacamisaria.com.br">financeiro@principessacamisaria.com.br</a></div>
+          <div class="contact-row"><small>Endereço principal informado</small><strong>Rua Luiz Maske, 248, Bloco A — Itoupavazinha, Blumenau/SC — 89066-650</strong></div>
+        </div>
+        <div>
+          <div class="notice"><strong>Segurança e transparência:</strong> confirme sempre se você está utilizando nossos canais oficiais. Este site não pede senha bancária, número de cartão ou códigos de autenticação.</div>
+          <div style="height:18px"></div>
+          <div class="contact-box"><h3>Horários e estoque</h3><p style="color:var(--muted)">Os horários de atendimento, produtos, tamanhos e disponibilidade podem variar entre as unidades. Entre em contato antes de se deslocar caso precise confirmar uma informação específica.</p><a class="btn btn-dark" href="tel:+554733090200">Entrar em contato</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal" id="politicas">
+      <div class="container">
+        <div class="section-head"><h2>Políticas e informações.</h2><p>Conteúdo institucional para explicar como este site funciona e como os canais de contato são utilizados.</p></div>
+        <details id="privacidade"><summary>Política de Privacidade</summary><p>Este site institucional não possui formulário próprio para coleta de dados pessoais. Ao clicar no telefone ou no endereço de e-mail, o contato é iniciado pelo aplicativo ou serviço escolhido pelo usuário. Caso você nos envie dados por e-mail ou telefone, eles serão utilizados para responder ao seu atendimento e às solicitações relacionadas à empresa. Não vendemos dados pessoais. Dados poderão ser mantidos quando necessários para cumprimento de obrigações legais ou para atendimento legítimo de solicitações. Para dúvidas sobre privacidade, utilize o e-mail financeiro@principessacamisaria.com.br.</p><p>O site pode utilizar armazenamento local estritamente necessário para registrar sua preferência sobre o aviso de cookies. Caso ferramentas de análise, publicidade ou outras tecnologias de terceiros sejam adicionadas futuramente, esta política deverá ser atualizada antes da coleta correspondente.</p></details>
+        <details id="termos"><summary>Termos de Uso</summary><p>As informações deste site possuem caráter institucional. Imagens gráficas e elementos visuais têm finalidade ilustrativa. A disponibilidade de produtos, preços, tamanhos, condições de pagamento, horários de funcionamento e demais condições comerciais deve ser confirmada diretamente com a empresa antes de uma compra ou visita. O uso deste site não cria obrigação de venda nem garante disponibilidade de item específico.</p></details>
+        <details id="trocas"><summary>Trocas, devoluções e atendimento</summary><p>Para informações sobre compras realizadas em uma de nossas lojas, incluindo troca ou devolução, entre em contato pelo telefone (47) 3309-0200 ou pelo e-mail financeiro@principessacamisaria.com.br. As condições aplicáveis dependem do tipo de compra e devem respeitar a legislação de defesa do consumidor vigente.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><div class="footer-brand">DELUXE VESTUÁRIOS MASCULINOS</div><div class="footer-meta">Organização: DELUXE NEGOCIOS DO VESTUARIO LTDA<br>Rua Luiz Maske, 248, Bloco A — Itoupavazinha — Blumenau/SC — CEP 89066-650<br>Telefone: (47) 3309-0200 • financeiro@principessacamisaria.com.br</div></div>
+      <div class="footer-links"><a href="#privacidade">Privacidade</a><a href="#termos">Termos</a><a href="#trocas">Trocas e atendimento</a></div>
+    </div>
+  </footer>
+
+  <div class="cookie" id="cookie"><p>Este site usa somente armazenamento local essencial para lembrar sua escolha sobre este aviso. Não utilizamos cookies de publicidade nesta versão.</p><button id="okCookie">Entendi</button></div>
+  <script>
+    const cookie=document.getElementById('cookie');
+    if(!localStorage.getItem('deluxe_cookie_notice')) cookie.style.display='flex';
+    document.getElementById('okCookie').addEventListener('click',()=>{localStorage.setItem('deluxe_cookie_notice','accepted');cookie.style.display='none'});
+  </script>
+</body>
+</html>
